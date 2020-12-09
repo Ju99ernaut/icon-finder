@@ -5,6 +5,7 @@ Iconify Icon Finder is a package for searching icons. It uses Iconify API as a s
 Icon Finder is used to:
 
 - Build icon pickers, which can be used in website or theme customisers.
+- Build demo website for icon sets, such as [Material Line Icons](https://cyberalien.github.io/line-md/) ([source code](https://github.com/cyberalien/line-md)).
 - Build plug-ins for UI design tools, such as [Iconify for Figma](https://github.com/iconify/iconify-figma) and [Iconify for Sketch](https://github.com/iconify/iconify-sketch).
 
 Icon finder repository has several packages:
