@@ -33,7 +33,7 @@ Svelte Components package contains:
 
 Links:
 
-- ["core" branch](https://github.com/iconify/icon-finder/tree/base-svelte)
+- ["base-svelte" branch](https://github.com/iconify/icon-finder/tree/base-svelte)
 - [Documentation](https://docs.iconify.design/icon-finder/packages/base-svelte/)
 
 ### Projects based on Svelte Components
