@@ -1,6 +1,6 @@
 {
-    "name": "icon-search",
-    "description": "Iconify Search, Svelte base (rename this)",
+    "name": "@ju99ernaut/iconsearch",
+    "description": "Iconify Search",
     "version": "1.0.1",
     "author": "Brendon Ngirazi",
     "license": "(Apache-2.0 OR GPL-2.0)",
