@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+node_modules
+lib
+# Keeping package-lock.json guarantees merge conflicts when updating forks, so it is better to ignore it.
+package-lock.json
