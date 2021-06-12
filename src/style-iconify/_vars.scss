@@ -4,7 +4,10 @@
 $iif-spacing: 8px;
 
 // Fonts
-$iif-font-family: 'PT Sans', 'Open Sans', 'Droid Sans', sans-serif;
+$iif-font-family: 'PT Sans',
+'Open Sans',
+'Droid Sans',
+sans-serif;
 $iif-font-weight-normal: 400;
 $iif-font-weight-bold: 700;
 
@@ -23,17 +26,17 @@ $iif-large-font-size: 22px;
 $iif-large-line-height: 32px;
 
 // Main palette
-$iif-background-color: palette('gray', 0);
-$iif-background-color2: palette('gray', 25);
-$iif-background-color3: palette('gray', 0);
+$iif-background-color: palette('gray', 825);
+$iif-background-color2: palette('gray', 850);
+$iif-background-color3: palette('gray', 825);
 
-$iif-text-color: palette('gray', 850);
-$iif-text-muted-color: palette('gray', 400);
-$iif-text-dimmed-color: palette('gray', 600);
+$iif-text-color: palette('gray', 50);
+$iif-text-muted-color: palette('gray', 100);
+$iif-text-dimmed-color: palette('gray', 150);
 $iif-text-faint-color: palette('gray', 200);
 
-$iif-simple-border-color: palette('gray', 100);
-$iif-solid-border-color: palette('gray', 150);
+$iif-simple-border-color: palette('gray', 400);
+$iif-solid-border-color: palette('gray', 450);
 
 // Rotation
 $iif-rotation-palettes: $rotation;
@@ -82,9 +85,8 @@ $iif-input-icon-spacing: 22px;
 
 // Options button
 $iff-option-button-padding-left: $iif-spacing;
-$iff-option-button-with-icon-padding-left: $iif-spacing +
-	$iif-option-button-icon-size + 6px;
-$iff-option-button-with-icon-padding-right: $iif-spacing + 2px;
+$iff-option-button-with-icon-padding-left: $iif-spacing+$iif-option-button-icon-size+6px;
+$iff-option-button-with-icon-padding-right: $iif-spacing+2px;
 
 // Input normal
 $iif-input-background-color: $iif-background-color3;
@@ -129,10 +131,8 @@ $iif-button-primary-background-color: palette($iif-link-palette, 600);
 $iif-button-primary-border-color: $iif-button-primary-background-color;
 $iif-button-primary-color: palette('gray', 0);
 
-$iif-button-primary-hover-background-color: palette(
-	$iif-link-hover-palette,
-	600
-);
+$iif-button-primary-hover-background-color: palette($iif-link-hover-palette,
+    600);
 $iif-button-primary-hover-border-color: $iif-button-primary-hover-background-color;
 $iif-button-primary-hover-color: palette('gray', 0);
 
@@ -146,10 +146,8 @@ $iif-button-checked-background-color: palette($iif-link-palette, 600);
 $iif-button-checked-border-color: $iif-button-checked-background-color;
 $iif-button-checked-color: palette($iif-link-palette, 0);
 
-$iif-button-checked-hover-background-color: palette(
-	$iif-link-hover-palette,
-	600
-);
+$iif-button-checked-hover-background-color: palette($iif-link-hover-palette,
+    600);
 $iif-button-checked-hover-border-color: $iif-button-checked-hover-background-color;
 $iif-button-checked-hover-color: palette($iif-link-hover-palette, 0);
 
@@ -229,17 +227,12 @@ $iif-filter-unselected-focus-border-color: $iif-filter-focus-border-color;
 $iif-filter-unselected-focus-shadow: 0 0 0 2px $iif-border-focus-color inset;
 
 // Selected + focus
-$iif-filter-selected-focus-color: palette(
-	$iif-link-hover-palette,
-	$iif-link-shade
-);
-$iif-filter-selected-focus-background-color: palette(
-	$iif-link-hover-palette,
-	0
-);
+$iif-filter-selected-focus-color: palette($iif-link-hover-palette,
+    $iif-link-shade);
+$iif-filter-selected-focus-background-color: palette($iif-link-hover-palette,
+    0);
 $iif-filter-selected-focus-border-color: palette($iif-link-hover-palette, 0);
-$iif-filter-selected-focus-shadow: 0 0 0 2px
-	palette($iif-link-hover-palette, 150) inset;
+$iif-filter-selected-focus-shadow: 0 0 0 2px palette($iif-link-hover-palette, 150) inset;
 
 //
 // Collections list
@@ -249,9 +242,9 @@ $iif-collections-list-title-color: $iif-text-dimmed-color;
 $iif-collection-normal-border-width: $iif-border-width;
 $iif-collection-border-width: $iif-border-width;
 
-$iif-collections-list-stats-width: 80px + $iif-collection-border-width;
+$iif-collections-list-stats-width: 80px+$iif-collection-border-width;
 $iif-collections-list-min-width: 200px;
-$iif-collections-list-max-width: $iif-collections-list-min-width + 120px;
+$iif-collections-list-max-width: $iif-collections-list-min-width+120px;
 $iif-collections-list-spacing: 12px;
 
 // Collection
@@ -272,12 +265,10 @@ $iif-collection-author-color: $iif-text-muted-color;
 // Stats
 $iif-collection-stats-color: palette('gray', 0);
 $iif-collection-background-shade: 600;
-$iif-collection-stats-overlay-background: rgba(
-	255,
-	255,
-	255,
-	0.1
-); // Slightly modified blue background, used for samples in collections list
+$iif-collection-stats-overlay-background: rgba(255,
+    255,
+    255,
+    0.1); // Slightly modified blue background, used for samples in collections list
 
 $iif-collection-stats-hover-color: $iif-text-dimmed-color;
 
@@ -290,7 +281,7 @@ $iif-error-loading-background-color: palette('blue-gray', 600);
 
 $iif-error-border-radius: $iif-border-radius-medium;
 $iif-error-box-shadow: 0 5px 17px rgba(0, 0, 0, 0.2),
-	0 2px 7px rgba(0, 0, 0, 0.15);
+0 2px 7px rgba(0, 0, 0, 0.15);
 
 $iif-error-icon-size: $iif-icon-size;
 
@@ -307,11 +298,9 @@ $iif-parent-icon-spacing: $iif-parent-icon-size; // + 4px;
 $iif-parent-level-spacing: $iif-spacing;
 
 // Normal
-$iif-parent-color: if(
-	$iif-parent-with-block,
-	$iif-text-dimmed-color,
-	$iif-link-color
-);
+$iif-parent-color: if($iif-parent-with-block,
+    $iif-text-dimmed-color,
+    $iif-link-color);
 $iif-parent-background-color: $iif-background-color2;
 $iif-parent-border-color: $iif-simple-border-color;
 $iif-parent-icon-color: $iif-text-muted-color;
@@ -399,10 +388,8 @@ $iif-icons-grid-icon-selected-border-color: palette($iif-link-palette, 300);
 // Selected, hover
 $iif-icons-grid-icon-selected-hover-color: $iif-link-hover-color;
 $iif-icons-grid-icon-selected-hover-background-color: $iif-icons-grid-icon-selected-background-color;
-$iif-icons-grid-icon-selected-hover-border-color: palette(
-	$iif-link-hover-palette,
-	300
-);
+$iif-icons-grid-icon-selected-hover-border-color: palette($iif-link-hover-palette,
+    300);
 
 //
 // Icons list
@@ -427,8 +414,7 @@ $iif-icons-list-selecting-border-color: $iif-simple-border-color;
 $iif-icons-list-sample-left: $iif-icons-list-padding-vertical;
 
 // Stats
-$iif-icons-list-stats-padding-left: $iif-icons-list-icon-size +
-	$iif-icons-list-sample-left + $iif-spacing;
+$iif-icons-list-stats-padding-left: $iif-icons-list-icon-size+$iif-icons-list-sample-left+$iif-spacing;
 $iif-icons-list-stats-line-height: 26px;
 $iif-icons-list-text-margin: 4px;
 
@@ -457,14 +443,10 @@ $iif-icons-list-selected-left-border-color: palette('gray', 300);
 $iif-icons-list-selected-row-hover-color: $iif-icons-list-row-hover-color;
 $iif-icons-list-selected-row-hover-sample-color: $iif-icons-list-selected-sample-color;
 $iif-icons-list-selected-row-hover-background-color: $iif-icons-list-row-hover-background-color;
-$iif-icons-list-selected-row-hover-separator-color: palette(
-	$iif-link-hover-palette,
-	300
-);
-$iif-icons-list-selected-row-hover-left-border-color: palette(
-	$iif-link-hover-palette,
-	300
-);
+$iif-icons-list-selected-row-hover-separator-color: palette($iif-link-hover-palette,
+    300);
+$iif-icons-list-selected-row-hover-left-border-color: palette($iif-link-hover-palette,
+    300);
 
 // Hover color
 $iif-icons-list-hover-color: $iif-link-hover-color;
